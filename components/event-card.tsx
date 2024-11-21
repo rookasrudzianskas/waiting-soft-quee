@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import {Id} from "@/convex/_generated/dataModel";
 import {useUser} from "@clerk/nextjs";
@@ -235,3 +237,5 @@ const EventCard = ({ eventId }: { eventId: Id<"events"> }) => {
     </div>
   );
 }
+
+export default EventCard;
