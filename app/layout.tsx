@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ConvexClientProvider } from "@/components/ConvexClientProvider";
-import Header from "@/components/Header";
 import { ClerkProvider } from "@clerk/nextjs";
-import SyncUserWithConvex from "@/components/SyncUserWithConvex";
+import SyncUserWithConvex from "@/components/sync-user-with-convex";
 import { Toaster } from "@/components/ui/toaster";
+import React from "react";
+import Header from "@/components/header"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
